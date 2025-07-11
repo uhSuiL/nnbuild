@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nnbuild"
+authors = [{name = "Shu Liu", email = "liushu_public@yeah.net"}]
+description = "Scaffolding for Neural Network Experiment Project"
+keywords = ["NN Tool", "Neural Network", "Deep Learning", "Scaffolding", "Utilities", "Tool"]
+license-files = ["LICEN[CS]E*"]
+readme = "README.md"
+
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+
+version = "0.0.0"
+requires-python = ">=3.11"
+dependencies = [
+
+]
+
+[project.optional-dependencies]
+dev = [
+    "twine",
+    # "pytest"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
